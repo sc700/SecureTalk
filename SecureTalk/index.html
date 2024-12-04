@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Talk</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Secure Talk</h1>
+    </header>
+    <div class="main-container">
+        <div class="messages-box">
+            <h2>Messages</h2>
+            <ul id="messages-list">
+                <!-- Messages will be appended here -->
+            </ul>
+        </div>
+        <div class="container">
+            <label for="recipient">Recipient:</label>
+            <input type="text" id="recipient" placeholder="Enter recipient's name or email">
+            <label for="message">Enter your message:</label>
+            <input type="text" id="message" placeholder="Type your message here...">
+            <div class="button-container">
+                <button onclick="encryptMessage()">Encrypt</button>
+                <button onclick="decryptMessage()">Decrypt</button>
+                <button onclick="sendMessage()">Send</button>
+            </div>
+            <div id="output-container">
+                <p id="iv"></p>
+                <p id="encrypted"></p>
+                <p id="hmac"></p>
+                <p id="output"></p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

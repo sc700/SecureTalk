@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.messages-box {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-right: 20px;
+    height: calc(100vh - 160px);
+    overflow-y: auto;
+}
+
+.messages-box h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+#messages-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#messages-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.container {
+    flex: 2;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#output-container {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+#iv, #encrypted, #hmac {
+    margin: 5px 0;
+}
